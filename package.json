@@ -1,0 +1,28 @@
+{
+  "name": "app01-almacen",
+  "version": "1.0.0",
+  "description": "Aplicacion de Escritorio de almacen echo con el framework Electrom.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RevengeHunter/ElectronAplication.git"
+  },
+  "keywords": [
+    "Electrion",
+    "Escritorio",
+    "Multiplataforma",
+    "Node.js"
+  ],
+  "author": "Vladimir Cristhian De La Cruz Tinoco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RevengeHunter/ElectronAplication/issues"
+  },
+  "homepage": "https://github.com/RevengeHunter/ElectronAplication#readme",
+  "devDependencies": {
+    "electron": "^9.1.0"
+  }
+}

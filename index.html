@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Aplicacion Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>
+      Estamos usando la version <span id="versionNode"></span> Node.js, Chromiun
+      <span id="versionChrome"></span>, Electron
+      <span id="versionElectron"></span>.
+    </p>
+    <script src="renderer.js"></script>
+  </body>
+</html>
