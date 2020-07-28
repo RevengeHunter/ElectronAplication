@@ -1,0 +1,313 @@
+/*Vista de Desktop*/
+.header {
+  &_imge {
+    img {
+      width: 100%;
+      padding: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+.header_navegacione {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+
+  &_lista {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+    align-content: center;
+    ul {
+      padding: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .item {
+        padding: 8px 4px;
+        margin-right: 5px;
+        list-style: none;
+        transition: 0.3s;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-family: "Nunito";
+          font-size: 1.3rem;
+        }
+      }
+
+      .item:hover {
+        background-color: rgba(7, 77, 109, 0.7);
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &_usuario {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: center;
+    justify-content: flex-end;
+    position: relative;
+    .menu {
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: space-around;
+      align-items: center;
+      .barra_busqueda {
+        border-radius: 6px;
+        padding: 6px 4px;
+        list-style: none;
+        font-family: "Nunito";
+      }
+      .usu_item {
+        display: inline-block;
+        flex-wrap: nowrap;
+        margin-right: 20px;
+        list-style: none;
+        justify-content: center;
+        padding: 6px 4px;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-family: "Nunito";
+          font-size: 1.3rem;
+        }
+        .sub-menu {
+          position: absolute;
+          padding: 10px 20px;
+          margin: 0;
+          right: 0;
+          background-color: rgb(0, 41, 60);
+          width: 17%;
+          .usu_item {
+            margin-top: 5px;
+            display: block;
+            margin-right: 10px;
+            list-style: none;
+            transition: 0.3s;
+            width: 100%;
+            a {
+              color: #ffffff;
+              text-decoration: none;
+              font-family: "Nunito";
+            }
+          }
+          .usu_item:hover {
+            background-color: rgba(240, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+            width: 100%;
+          }
+        }
+      }
+
+      .usu_item:hover {
+        background-color: rgba(241, 72, 50, 0.7);
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+.menu_dmv {
+  display: none;
+}
+.active {
+  display: none;
+}
+
+.movie {
+  &_vista {
+    width: 100%;
+    height: 80vh;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &_lista {
+    width: 95%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    .movie_lista-fila {
+      margin-top: 2rem;
+      label {
+        margin-top: 3rem;
+        font-family: "Nunito";
+        color: white;
+        font-size: 1.7rem;
+      }
+      .peli_contenedor {
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: -webkit-inline-box;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 18rem;
+        .peli {
+          margin: 0 5px;
+          /* width: 20%; */
+          width: 200px;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Ancho y Alto */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Color del Track o Camino */
+::-webkit-scrollbar-track {
+  background: rgba(255, 251, 9, 0.7);
+}
+
+/* Color de la Barra de Posisón */
+::-webkit-scrollbar-thumb {
+  background: rgb(9, 121, 129);
+}
+
+/* Color que adopta al momento de pasar el mouse por la barra */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 193, 252, 0.5);
+}
+/******************/
+/**********Mostrando Menu despleglable*********/
+/*Movile Style*/
+@media screen and (max-width: 1100px) {
+  .header {
+    &_imge {
+      display: none;
+    }
+  }
+  .header_navegacione {
+    display: none;
+  }
+  .menu_dmv {
+    display: block;
+
+    .header_imges {
+      display: block;
+      position: absolute;
+      width: 20%;
+      top: 0;
+      right: 0;
+      margin-right: 40px;
+      margin-top: 8px;
+      img {
+        width: 100%;
+        padding: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    .btn-toggle-nav {
+      padding: 0 10px;
+      cursor: pointer;
+      display: flex;
+      width: 40px;
+      height: -webkit-fill-available;
+      justify-content: center;
+      align-items: center;
+      background-color: #016457;
+    }
+
+    .btn-toggle-nav span {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: whitesmoke;
+      display: inline-block;
+      position: relative;
+      /* margin-top: 13px; */
+    }
+
+    .btn-toggle-nav span::before,
+    .btn-toggle-nav span::after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: whitesmoke;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+    }
+
+    .btn-toggle-nav span::before {
+      top: -8px;
+    }
+
+    .btn-toggle-nav span::after {
+      top: 8px;
+    }
+
+    .nav-sidebar {
+      width: 60px;
+      height: calc(100vh - 50px);
+      position: fixed;
+      left: 0;
+      background-color: rgba(27, 27, 27, 0);
+      padding-top: 20px;
+      transition: all 0.3s;
+    }
+
+    .nav-sidebar ul {
+      visibility: hidden;
+      transition: all 0.3s;
+      overflow: hidden;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .nav-sidebar ul li {
+      list-style: none;
+    }
+
+    .nav-sidebar ul li a {
+      font-size: 20px;
+      font-family: "Nunito";
+      text-decoration: none;
+      color: white;
+      display: block;
+      padding-top: 10px;
+      /* padding: 0 5px; */
+      font-family: arial;
+      height: 30px;
+
+      /*Mantener el Contenido*/
+      white-space: nowrap;
+      /* opacity: 0; */
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-sidebar ul li a:hover {
+      background-color: #016457;
+      font-size: 23px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+/**********************************************/
+/*Vista dispositivo movil*/
+/*************************/

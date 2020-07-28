@@ -1,0 +1,138 @@
+/*Desktop Style*/
+
+.hlogin {
+  padding: 20px;
+  position: relative;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.introduccion {
+  text-align: justify;
+  width: 40%;
+  padding-top: 5rem;
+  margin-left: 5rem;
+}
+
+.registro {
+  width: 90%;
+  margin-right: 3rem;
+  z-index: 1;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-family: "Comfortaa";
+  position: relative;
+
+  &_contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 10px 10px 10px whitesmoke;
+    border: rgb(153, 153, 153) solid 2px;
+    border-radius: 7px;
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+/*****************************************************************/
+
+/*Movile Style*/
+@media screen and (max-width: 1000px) {
+  .contenedor {
+    justify-content: none;
+  }
+
+  .introduccion {
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Modifica el contenedor original del col-6*/
+  .modify {
+    width: 80%;
+  }
+
+  .registro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contenedor {
+    justify-content: none;
+  }
+
+  .introduccion {
+    font-size: 20px;
+    text-align: justify;
+    width: 86%;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(153, 153, 153, 0.7);
+    border-radius: 7px;
+    .titulo {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+
+  /*Modifica el contenedor original del col-6*/
+  .modify {
+    width: 100%;
+  }
+
+  .registro {
+    width: 100%;
+    &_contenedor {
+      box-shadow: none;
+      background-color: rgba(153, 153, 153, 0.7);
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .contenedor {
+    justify-content: none;
+  }
+
+  .introduccion {
+    font-size: 18px;
+    text-align: justify;
+    width: 85%;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    .titulo {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  /*Modifica el contenedor original del col-6*/
+  .modify {
+    width: 90%;
+  }
+
+  .registro {
+    width: 100%;
+  }
+}
+/**********************************************************************/

@@ -1,0 +1,110 @@
+/*Parte de Catalogo*/
+.catalogo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 35px; */
+  margin-bottom: 45px;
+  font-family: "Nunito";
+
+  &_texto {
+    text-align: center;
+    width: 100%;
+    margin: 3em 0 0 0;
+    color: whitesmoke;
+    font-size: 36px;
+
+    h1 {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h5 {
+      margin: 0;
+      margin-top: 1em;
+    }
+  }
+
+  &_barra {
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .imagen {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    .button {
+      margin-left: auto;
+      margin-right: auto;
+      border: solid 1px white;
+      border-radius: 10px;
+      transition: 0.2s;
+      padding: 10px 5px;
+      width: 80%;
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+
+    .button:hover {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      background-color: #d6671d;
+      border: none;
+      transition: 0.2s;
+      padding: 11px 20px;
+    }
+  }
+}
+/**********************************************************************/
+
+/*Movile Design*/
+@media screen and (max-width: 880px) {
+  .catalogo {
+    width: 90%;
+    margin-bottom: 25px;
+
+    &_texto {
+      font-size: 24px;
+    }
+
+    &_button {
+      .button {
+        padding: 10px 0;
+        width: 99%;
+        a {
+          font-size: 1rem;
+        }
+      }
+
+      .button:hover {
+        width: 99%;
+        padding: 11px 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .catalogo {
+    height: 100vh;
+    padding-top: 120px;
+    margin-bottom: 1px;
+  }
+}
+/**********************************************************************/

@@ -1,0 +1,15 @@
+/*Importacion de los estilos de la pagina WEB*/
+@import "style.css";
+@import "normalize.css";
+
+/*Estilo visual Predeterminado*/
+@import "abstract/constantes";
+@import "abstract/modal";
+@import "desktop/header";
+@import "desktop/presentacion";
+@import "desktop/descripcion";
+@import "desktop/footer";
+@import "desktop/catalogo";
+@import "desktop/login";
+@import "desktop/registro";
+@import "desktop/entretenimiento";

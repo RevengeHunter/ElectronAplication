@@ -1,0 +1,131 @@
+/*Desktop Style*/
+
+.hlogin {
+  padding: 20px;
+  z-index: 2;
+}
+
+.bg_imagen {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/07Background.jpg");
+  filter: blur(8px);
+  background-position: center;
+  height: 99vh;
+  background-size: cover;
+}
+
+.login {
+  z-index: 1;
+  padding-top: 9rem;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-family: "Comfortaa";
+  position: relative;
+
+  &_contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(153, 153, 153);
+    box-shadow: 10px 10px 10px whitesmoke;
+    border: rgb(153, 153, 153) solid 2px;
+    border-radius: 7px;
+    width: 23rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .titulol {
+      color: white;
+      font-family: "Comfortaa";
+      font-weight: 400;
+      font-size: 42px;
+      padding-bottom: 20px;
+    }
+    .registro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .tsimple {
+        margin: 0;
+        display: block;
+        color: rgb(221, 221, 221);
+        margin-right: 7px;
+      }
+      .linksi {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .linksi:hover {
+        color: greenyellow;
+        font-size: 18px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+/*****************************************************************/
+
+/*Movile Style*/
+@media screen and (max-width: 880px) {
+}
+
+@media screen and (max-width: 640px) {
+  .is_img {
+    height: 100%;
+    background-size: cover;
+  }
+  .login {
+    padding-top: 0.5rem;
+    &_contenedor {
+      box-shadow: none;
+      background-color: rgba(153, 153, 153, 0.7);
+      border: none;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      .titulol {
+        font-size: 32px;
+        padding-bottom: 10px;
+      }
+      .registro {
+        .linksi {
+          color: greenyellow;
+        }
+      }
+    }
+  }
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .login {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    &_contenedor {
+      border: none;
+      margin: 0;
+      width: 100%;
+      .titulol {
+        font-size: 32px;
+        padding-bottom: 10px;
+      }
+      .registro {
+        .linksi {
+          color: greenyellow;
+        }
+      }
+    }
+  }
+  .content {
+    width: 90%;
+  }
+}
+/**********************************************************************/

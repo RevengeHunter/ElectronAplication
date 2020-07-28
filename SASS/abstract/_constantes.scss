@@ -1,0 +1,151 @@
+/*Estilo presente en todas las paginas WEB*/
+.content {
+  margin: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo {
+  color: white;
+  font-family: "Comfortaa";
+  font-weight: 400;
+  font-size: 42px;
+}
+
+.subtitulo {
+  color: white;
+  font-family: "Comfortaa";
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.parrafo {
+  color: #e6e6e6;
+  font-family: "Comfortaa";
+  font-size: 20px;
+}
+
+.fondo {
+  background-color: #ec5252;
+}
+
+.separador {
+  position: relative;
+  background-color: rgba(22, 78, 78, 0.829);
+  border-radius: 5px;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5px;
+}
+
+.etexto {
+  margin: 13px;
+  border: 0.5px solid rgb(216, 216, 216);
+  width: 80%;
+  padding: 10px 5px;
+  font-size: 22px;
+  border-radius: 7px;
+  font-family: "Comfortaa";
+}
+
+.btn {
+  width: 82%;
+  padding: 10px 30px;
+  background-color: #18bc9c;
+  border: none;
+  border-radius: 7px;
+  font-size: 22px;
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  font-family: "Comfortaa";
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #13a588;
+  transition: 0.3s;
+}
+
+body {
+  /* background-color: #0b2429; */
+  background-color: black;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/*****************MOVILE STYLE******************/
+@media screen and (max-width: 360px) {
+  .etexto {
+    font-size: 18px;
+  }
+
+  .btn {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+}
+/**********************************************/
+
+/****************GRID**********************/
+.row {
+  clear: both;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  /* padding: 25px; */
+  /* border: 1px solid red; */
+}
+/******************************************/
+/*VIDEO*/
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+/******************************************/
